@@ -51,11 +51,11 @@ transform = transforms.Compose([
 ])
 
 # Prepare training and testing image/numerical data
-train_images_path = './data/train_images'
-test_images_path = './data/test_images'
+train_images_path = '../data/train_images'
+test_images_path = '../data/test_images'
 
-train_df = pd.read_csv('./data/train.csv')
-test_df = pd.read_csv('./data/test.csv')
+train_df = pd.read_csv('../data/train.csv')
+test_df = pd.read_csv('../data/test.csv')
 
 print("Process Images/Extract Features")
 train_plant_image_features = process_images(img_feature_extract_model, train_images_path, train_df['id'])

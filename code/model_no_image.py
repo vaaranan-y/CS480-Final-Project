@@ -10,8 +10,8 @@ num_estimators = sys.argv[1]
 
 
 # Load the data
-train_df = pd.read_csv('./data/train.csv')
-test_df = pd.read_csv('./data/test.csv')
+train_df = pd.read_csv('../data/train.csv')
+test_df = pd.read_csv('../data/test.csv')
 plant_features = train_df.iloc[:, 1:-6] 
 plant_means = train_df.iloc[:, -6:] # "Means" are the values to be predicted
 test_plant_features = test_df.iloc[:, 1:]
